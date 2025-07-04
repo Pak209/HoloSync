@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "HoloSync",
+    "slug": "holosync",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.holosync.app",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "This app uses HealthKit to track your fitness data for Holobot training.",
+        "NSHealthUpdateUsageDescription": "This app uses HealthKit to sync your workout data with your Holobot.",
+        "NSMotionUsageDescription": "This app uses motion data to track your steps and physical activity."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.holosync.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-sensors"
+    ],
+    "scheme": "holosync",
+    "extra": {
+      "eas": {
+      }
+    }
+  }
+}
